@@ -1,12 +1,10 @@
 import * as React from 'react';
+import styles from './Layout.module.scss';
 
-interface LayoutProps {
-}
-
-const Layout: React.FunctionComponent<LayoutProps> = (props) => {
+const Layout: React.FunctionComponent<{}> = (props) => {
   return (
       <React.Fragment>
-        <div>Tollbas,sidedrawer,backdrop</div>
+        <div>Toolbars,sidedrawer,backdrop</div>
         <main>{props.children}</main>
       </React.Fragment>
   );

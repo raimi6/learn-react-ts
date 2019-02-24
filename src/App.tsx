@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader';
 import './App.css';
 import Layout from './components/Layout/Layout';
 import BurgerBuilder from './container/BurgerBuilder/BurgerBuilder';
@@ -6,7 +7,7 @@ import BurgerBuilder from './container/BurgerBuilder/BurgerBuilder';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className='App'>
         <Layout>
           <BurgerBuilder/>
         </Layout>
@@ -15,4 +16,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default hot(module)(App);

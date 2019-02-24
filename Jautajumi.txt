@@ -1,0 +1,26 @@
+1.
+
+ ingredients: {
+    [key: string]:number;
+  },
+
+type DissabldInfo = {
+  [key:string]:boolean
+}
+
+
+const disabledInfo:DissabldInfo= {
+      ...this.state.ingredients
+    };
+
+    for(let key in disabledInfo){
+      disabledInfo[key] = disabledInfo[key] <= 0; 
+    }
+
+kā lietot mainīgo kopēšanu( vai tā vsp dara?) ja nepieciešams mainīt mainīgu tipus?
+2. Vai vnm jadefine mainīgo type, vai to var darīt inline, kas ir best pratice?
+
+
+darba laiki
+
+11-20 velam vakarma
